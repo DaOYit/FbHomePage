@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>We welcome you on Facebook: Log in, subscribe or find more information</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body onload="optioncall()">
+  <header>
+		<div class="jumbotron" style="background-color:#3B5599;">
+			<div class="container col-xs-6">
+				<div class ="container col-xs-3">
+				</div>
+				<img src="image\facebook.png" class="img-rounded col-xs-3" alt="Cinque Terre" width="264" height="60">
+			</div>
+	
+		<form role="form">
+			<div class="form-group col-xs-2">
+				<label for="uname"><font color="#ffffff">Phone&nbsp;or&nbsp;Email</font></label>
+				<input type="text" id="uname" class="form-control" placeholder="username"></input>
+				<input type="checkbox"><font color="#ffffff">&nbsp;Remember me</font></input>
+			</div>
+		<div class="form-group col-xs-2">
+			<label for="passwd"><font color="#ffffff">Password</font></label>
+			<input type="password" id="passwd" class="form-control" placeholder="password"></input>
+			<label><a href="#"><font color="#ffffff">forgot password?</font></a></label>
+		</div>
+		<div class="form-group col-xs-2">
+			<br>
+			<button type="button" class="btn btn-primary" id="logIn">log In</button>
+		</div>
+			<br><br>
+		</form>
+		</div>
+  </header>
+  <div class="container col-xs-6">
+  <div class="container col-xs-3">
+  </div>
+  <div class="container col-xs-9">
+  <h2>Connect with friends and the
+world around you on Facebook.</h2>
+
+<img src="image\network.png" class="img-responsive" alt="Cinque Terre" width="598" height="530">
+  </div>
+  </div>
+  <div class="container col-xs-6">
+  <h3>Create an Account</h3>
+  <h5>it's free and always will be.</h3>
+    <div class="form-group col-xs-6">
+  <form  data-toggle="validator" name="register" onsubmit="myFunction()">
+
+	<label for="fName" >First name</label>
+	<input type="text" id="fName" class="form-control" placeholder="First name" required></input>
+		<br>
+	<label for="lName">Last name</label>
+	<input type="text" id="lName" class="form-control" placeholder="Surname" required></input>
+		<br>
+	<label for="email" >Email</label>
+	<input type="email" id="email" class="form-control " placeholder="Email or Mobile Number" data-error="Bruh, that email address is invalid" required></input>
+	<br>
+	<label for="rEmail" >Re-enter Email</label>
+	<input type="email" id="rEmail" class="form-control " placeholder="Re-enter Email or Mobile Number" required></input>
+	<label id="msg"></label><br>
+	<label for="rPasswd">Password</label>
+	<input type="password" data-minlength="6" id="rPasswd" class="form-control " placeholder="Password" required></input>
+	<label for="element-3">Birthday</label>
+	<div> 
+  <select class="form-control-inline col-xs-0" id="sel1" required>
+    <option>Day</option>
+  </select>
+  <select class="form-control-inline col-xs-0 " id="sel2" required>
+    <option>Month</option>
+  </select>
+    <select class="form-control-inline col-xs-0 " id="sel3" required>
+    <option>Year</option>
+  </select>
+	<h6><label class="form-control-inline "><a href="#">why do i need my DOB?</a></label></h6>
+	</div>
+		<label for="Gender" >Gender</label><br>
+	  <label class="radio-inline">
+      <input type="radio" name="gender" id="myRadio1"  value="Female" required>Female
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="gender" id="myRadio2" value="Male" required>Male
+    </label>
+	<br>
+ <label><h6>By clicking Sign Up, you agree to our Terms and that you have read our <a href="#">Data Policy</a>, including our Cookie Use.</h6></label><br>
+   <button type="submit" class="btn btn-primary btn-md" id="register">Create an account</button>
+   <hr>
+   <h6><a href="#">Create a Page</a> for a celebrity, band or business.</h6>
+   
+  </form>
+ </div>
+  </div>
+  <br><br><br>
+  <footer>
+  <div class="container">
+
+    <h6><a href="#">English(UK)</a> &nbsp;&nbsp;&nbsp;<a href="#">Polski</a>  &nbsp;&nbsp;&nbsp;  <a href="#">Espanol</a> &nbsp;&nbsp;&nbsp;<a href="#">Francais(France)</a> &nbsp;&nbsp;&nbsp;<a href="#">Italiano</a> &nbsp;&nbsp;&nbsp;<a href="#">English(UK)</a> &nbsp;&nbsp;&nbsp;<a href="#">English(UK)</a> </h6>
+	<hr>
+    <h6><a href="#">Login</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Sign Up</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Messenger</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Facebook Life</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Find friends</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Peoples</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Pages</a></h6>
+  </div>
+  </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/myjs/save.js"></script>
+	
+  </body>
+</html>
